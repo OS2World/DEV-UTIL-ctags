@@ -1,0 +1,34 @@
+Exuberant CTAGS 5.6
+===================
+
+This is a build of Exuberant CTAGS (http://ctags.sourceforge.net/)
+for OS/2 compiled using Open Watcom 1.6 (http://www.openwatcom.org/).
+
+A patched version of the source can be downloaded from hobbes.nmsu.edu,
+search for ctags-5_6_ow.zip. Unzip the source archive and execute:
+
+wmake -a -f mk_owat.mak <target>
+
+where the target options are one of:
+
+  os2       build os2 release version
+  os2debug  build os2 debug version
+  nt        build nt release version
+  ntdebug   build nt debug version
+  clean     clean up the build
+  ctagsarc  zip archive
+
+Yes, the NT version can be built but is less tested than the OS/2 version.
+
+The file ctags_ow.diff contains the diff from the 5.6 gz source archive.
+Added files, other than the makefile (mk_owat.mak), include owconfig.h and
+the watregex directory. owconfig.h contains defines and options for the OW
+build and watregex is the regular expression library originally by
+Henry Spencer.
+
+
+
+Michael Greene <os2@mgreene.org>
+16 December 2006
+
+
